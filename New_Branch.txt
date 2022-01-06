@@ -1,0 +1,31 @@
+# a way to create and push to a new branch using the command line
+
+#initialize the folder as a github repo
+git init
+
+#create a new blank branch
+git checkout --orphan BRANCHNAME
+
+#commit an empty commit
+git commit --allow-empty -m "Root Commit"
+
+#add remote repo
+git remote add origin https://github.com/CryptoidCoder/REPONAME.git
+
+#push the empty commit
+git push origin BRANCHNAME
+
+#now we have created a new branch called NEWBRANCH
+
+
+
+#next to push to it:
+
+#add all the files
+git add --all
+
+#commit
+git commit -m "Initial Commit"
+
+#push
+git push --set-upstream origin BRANCHNAME

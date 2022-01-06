@@ -1,0 +1,8 @@
+# set what files to track
+git lfs track "*.filetype"
+
+#add the .gitattributes file
+git add .gitattributes
+
+#commit
+git commit -m "Using LFS For .filetype Files"
